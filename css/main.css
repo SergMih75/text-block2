@@ -1,0 +1,147 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	font-style: normal;
+	font-family: 'Jost', sans-serif;
+	text-decoration: none;
+	list-style: none;
+	transition: 300ms ease;
+}
+
+.text-block {
+	width: 1245px;
+	margin: 0 auto;
+	padding: 41.5px 22.5px 22.5px 22.5px;
+	overflow: hidden;
+
+	position: relative;
+
+	border: 1px solid #00898a;
+	background: #fff;
+	box-shadow: 8px 12px 32px rgba(80, 80, 80, 0.08);
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.text-block__title {
+	margin-bottom: 15px;
+
+	position: relative;
+	z-index: 2;
+
+	color: #0d3a51;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+.text-block__block {
+	width: 1166px;
+	overflow: hidden;
+}
+
+.text-block__text {
+	position: relative;
+	z-index: 2;
+
+	color: #0d3a51;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 14px; /* 100% */
+}
+
+.text-block__img {
+	width: 304px;
+	height: 251px;
+
+	position: absolute;
+	right: 200px;
+	bottom: 50px;
+	z-index: 1;
+}
+
+.text-block__text-disclose {
+	display: none;
+}
+
+@media (max-width: 450px) {
+	.text-block {
+		width: 355px;
+		padding: 15px;
+	}
+
+	.text-block__title {
+		margin-bottom: 9px;
+
+		color: #000;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: normal;
+		font-variant: small-caps;
+	}
+
+	.text-block__block {
+		width: 321px;
+		height: 253px;
+	}
+
+	.text-block__block-all {
+		width: 321px;
+		height: auto;
+	}
+
+	.text-block__text {
+		color: #000;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 14px; /* 100% */
+
+		-webkit-line-clamp: 20;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+
+	.text-block__text-all {
+		color: #000;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 14px; /* 100% */
+
+		-webkit-line-clamp: 50;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+
+	.text-block__img {
+		width: 161px;
+		height: 133px;
+
+		right: 30px;
+		bottom: 15px;
+	}
+
+	.text-block__text-disclose {
+		width: 355px;
+		margin: 0 auto;
+		text-align: end;
+
+		display: block;
+		cursor: pointer;
+
+		color: rgba(13, 58, 81, 0.7);
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 27px; /* 168.75% */
+		letter-spacing: 0.32px;
+		text-transform: uppercase;
+	}
+}
